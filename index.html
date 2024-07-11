@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <meta name="description" content="Portfólio de Antônio Martins, desenvolvedor de software.">
+    <meta name="keywords" content="Antônio Martins, desenvolvedor de software, portfólio">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu_link" href="index.html">Casa</a>
-            <a class="cabecalho__menu_link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu_link" href="#sociais">Redes Sociais</a>
+            <a class="cabecalho__menu_link" href="#skills">Habilidades</a>
+            <a class="cabecalho__menu_link" href="#certifications">Certificações</a>
+            <a class="cabecalho__menu_link" href="#experience">Experiência</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Portfólio <strong class="titulo-destaque">Antônio Martins</strong></h1>
-            <p class="apresentacao__conteudo__paragrafo">Olá! Sou Antônio Martins, estudante de Ciência da Computação. Vamos conversar?</p>
+    <main id="home">
+        <section class="apresentacao">
+            <div class="apresentacao__perfil">
+                <img src="./assets/fotoantoniofinal.png" alt="Imagem de Antônio Martins" class="profile-picture">
+                <h1 class="apresentacao__conteudo__titulo">Antônio Martins</h1>
+                <p class="apresentacao__conteudo__paragrafo">Estudante de Ciência da Computação</p>
+            </div>
             <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
                 <a class="apresentacao__links__navegacao" href="https://www.instagram.com/tonibsmartins/">
                     <img src="./assets/instagram.png" alt="logo instagram"> Instagram</a>
                 <a class="apresentacao__links__navegacao" href="https://github.com/tonibmartins">
@@ -27,13 +33,64 @@
                 <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/tonibmartinsdev/">
                     <img src="./assets/linkedin.png" alt="logo linkedin"> Linkedin</a>
                 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
             </div>
         </section>
-        <img src="./assets/fotoantoniofinal.png" alt="Imagem de Antônio Martins">
+        <section id="skills" class="details">
+            <div class="skills">
+                <h2 class="section-title">Habilidades</h2>
+                <ul>
+                    <li>Metodologia Ágil</li>
+                    <li>Gestão de projetos ágeis</li>
+                    <li>Desenvolvimento de Software (C)</li>
+                    <li>Desenvolvimento de APIs (Python)</li>
+                </ul>
+            </div>
+            <div id="certifications" class="certifications">
+                <h2 class="section-title">Certificações</h2>
+                <div class="certification">
+                    <h3>Trabalhando em Equipes Ágeis</h3>
+                    <p>DIO</p>
+                    <a href="https://www.dio.me/certificate/9E9A355F/share" target="_blank">Ver Certificado</a>
+                </div>
+                <div class="certification">
+                    <h3>Python para Data Science</h3>
+                    <p>Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/5934711b-d7e4-4e4f-ae85-c105f0830b0e" target="_blank">Ver Certificado</a>
+                </div>
+                <div class="certification">
+                    <h3>Python: crie a sua primeira aplicação</h3>
+                    <p>Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/4eb37c15-e0c1-476a-8c9e-057ccd167d31?lang" target="_blank">Ver Certificado</a>
+                </div>
+                <div class="certification">
+                    <h3>C: avançando na linguagem</h3>
+                    <p>Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/4a81bfb4-a275-49b4-9693-342e1fb511e6?lang" target="_blank">Ver Certificado</a>
+                </div>
+                <div class="certification">
+                    <h3>Redes Neurais: Deep Learning com PyTorch</h3>
+                    <p>Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/9b076dd4-6ad1-463f-b9fd-8369edc4bc28?lang" target="_blank">Ver Certificado</a>
+                </div>
+            </div>
+            <div id="experience" class="experience">
+                <h2 class="section-title">Experiência</h2>
+                <div class="job">
+                    <h3>Desenvolvedor Voluntário - Movimento Pró-Criança</h3>
+                    <p>set de 2023 - dez de 2023 · 4 meses</p>
+                    <p>Desenvolvi um programa em C para registro de doações. Participei na seleção de ferramentas, desenvolvimento da interface gráfica e reuniões com clientes. Apresentei os projetos desenvolvidos, contribuindo desde as discussões iniciais até a entrega final.</p>
+                </div>
+                <div class="job">
+                    <h3>Pesquisador voluntário - Universidade Católica de Pernambuco</h3>
+                    <p>jul de 2023 - mai de 2024 · 11 meses</p>
+                    <p>Pesquisador na área de detecção de anomalias em séries temporais. Utilizei ferramentas como PyTorch, Librosa, NumPy e LSTM para analisar máquinas industriais.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="rodape">
         <p>Desenvolvimento por Antônio Martins</p>
+        <p>Email: tonibmartinsdev@gmail.com</p>
     </footer>
 </body>
 </html>
